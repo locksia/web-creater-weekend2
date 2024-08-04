@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        .title{
+            padding: 10px 0px;
+            text-align: center;
+        }
+        .main_down{
+            border-collapse: collapse;
+        }
+        .main_down tr td {
+            text-align: center;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 120px;
+        }
+        .main_down button{
+            width: 120px;
+            height: 30px;
+            border: 0px;
+            background-color: rgba(203, 247, 243, 0.5);
+        }
+        .main_up{
+            text-align: center;
+            border-collapse: collapse;
+            margin: 10px;
+            border: 1px;
+            width: 50%;
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+        .main_up tr td {
+            padding: 10px;
+            padding: 10px;
+        }
+        .t1{
+            font-weight: bold;
+            background-color: rgba(203, 247, 243, 0.5);
+            border: 1px solid #ccc;
+        }
+        .t2{
+            border: 1px solid #ccc;
+        }
+        body{
+            background-color: rgba(212, 247, 203, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="title">my page</h1>
+    </div>
+    <hr>
+    <div>
+        <table class="main_down">
+            <tr>
+                <td><button type="button" onclick="location.href='주말 과제_main.html'">메인 페이지</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_schedule.html'">일정표</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_task.html'">과제 제출</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_note.html'">필기 노트</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_document.html'">수업 자료</button></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <table class = "main_up">
+        <tr class="t1">
+            <td>번호</td>
+            <td>중요</td>
+            <td>제목</td>
+            <td>첨부</td>
+            <td>공개일</td>
+        </tr>
+        <tr class="t2">
+            <td>1</td>
+            <td><input type="checkbox" id="checkbox" name="checkbox" checked></td>
+            <td>프론트엔드 자료</td>
+            <td><img src="img\file.png" alt="사진"></td>
+            <td>2024.07.24</td>
+        </tr>
+        <tr class="t2">
+            <td>2</td>
+            <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+            <td>백엔드 자료</td>
+            <td><img src="img\file.png" alt="사진"></td>
+            <td>2024.07.24</td>
+        </tr>
+        <tr class="t2">
+            <td>3</td>
+            <td><input type="checkbox" id="checkbox" name="checkbox"></td>
+            <td>앱 개발 자료</td>
+            <td><img src="img\file.png" alt="사진"></td>
+            <td>2024.07.24</td>
+        </tr>
+    </table>
+</body>
+</html>

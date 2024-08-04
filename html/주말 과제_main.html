@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        .title{
+            padding: 10px 0px;
+            text-align: center;
+        }
+        .main_up tr td{
+            padding: 10px;
+            text-align: center;
+        }
+        .main_up img{
+            width: 110px; height: 120px;
+            padding: 10px;
+        }
+        .main_down{
+            border-collapse: collapse;
+        }
+        .main_down tr td {
+            text-align: center;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 120px;
+        }
+        .main_down button{
+            width: 120px;
+            height: 30px;
+            border: 0px;
+            background-color: rgba(203, 247, 243, 0.5);
+        }
+        body{
+            background-color: rgba(212, 247, 203, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="title">my page</h1>
+    </div>
+    <hr>
+    <div>
+        <table class="main_down">
+            <tr>
+                <td><button type="button" onclick="location.href='주말 과제_main.html'">메인 페이지</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_schedule.html'">일정표</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_task.html'">과제 제출</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_note.html'">필기 노트</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_document.html'">수업 자료</button></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div>
+        <table class="main_up">
+            <tr>
+                <td rowspan="3">
+                    <img src="img/nopicture.PNG"><br>
+                    <input type="button" value="사진 변경">
+                </td>
+                <td><label for="name">이름 : 천준영</label><br></td>
+            </tr>
+            <tr>
+                <td><label for="school">학교 : 안동대학교</label><br></td>
+            </tr>
+            <tr>
+                <td><label for="grade">학년 : 4학년</label><br></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

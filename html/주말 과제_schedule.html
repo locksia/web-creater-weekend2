@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <style>
+        .title{
+            padding: 10px 0px;
+            text-align: center;
+        }
+        .main_down{
+            border-collapse: collapse;
+        }
+        .main_down tr td {
+            text-align: center;
+            border-collapse: collapse;
+            padding: 10px;
+            width: 120px;
+        }
+        .main_down button{
+            width: 120px;
+            height: 30px;
+            border: 0px;
+            background-color: rgba(203, 247, 243, 0.5);
+        }
+        body{
+            background-color: rgba(212, 247, 203, 0.5);
+        }
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .day, .date {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        .day {
+            background-color: rgba(203, 247, 243, 0.5);
+            font-weight: bold;
+            text-align: center;
+        }
+        .date {
+            background-color: #fafafa;
+            text-align: left;
+        }
+        .empty {
+            background-color: transparent;
+            border: none;
+        }
+        .holiday{
+            color :red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="title">my page</h1>
+    </div>
+    <hr>
+    <div>
+        <table class="main_down">
+            <tr>
+                <td><button type="button" onclick="location.href='주말 과제_main.html'">메인 페이지</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_schedule.html'">일정표</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_task.html'">과제 제출</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_note.html'">필기 노트</button></td>
+                <td><button type="button" onclick="location.href='주말 과제_document.html'">수업 자료</button></td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <h2 style="text-align:center;">8월</h2>
+    <div class="calendar">
+
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
+        
+        <div class="date empty"></div>
+        <div class="date empty"></div>
+        <div class="date empty"></div>
+        <div class="date empty"></div>
+        <div class="date">1<br>sw이론</div>
+        <div class="date">2<br>sw이론</div>
+        <div class="date">3</div>
+        
+        <div class="date">4</div>
+        <div class="date">5<br>sw이론</div>
+        <div class="date">6<br>sw이론</div>
+        <div class="date">7<br>sw이론</div>
+        <div class="date">8<br>sw이론</div>
+        <div class="date">9<br>sw이론</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12<br>sw이론</div>
+        <div class="date">13<br>sw이론</div>
+        <div class="date">14<br>sw이론</div>
+        <div class="date holiday">15<br>광복절</div>
+        <div class="date holiday">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19<br>sw이론</div>
+        <div class="date">20<br>sw이론</div>
+        <div class="date">21<br>sw이론</div>
+        <div class="date">22<br>sw이론</div>
+        <div class="date">23<br>sw이론</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26<br>sw이론</div>
+        <div class="date">27<br>sw이론</div>
+        <div class="date">28<br>sw이론</div>
+        <div class="date">29<br>sw이론</div>
+        <div class="date">30<br>sw이론</div>
+        <div class="date">31</div>
+    </div>
+</body>
+</html>
